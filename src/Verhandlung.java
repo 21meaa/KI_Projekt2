@@ -91,11 +91,12 @@ public class Verhandlung {
 		}
 		
 		public static void ausgabe(Agent a1, Agent a2, int i, int[] contract, double minA, double minB){
-			System.out.print(i + " -> " );
+			//System.out.print(i + " -> " );
 			a1.printUtility(contract);
-			System.out.print("  ");
+			System.out.print(", ");
 			a2.printUtility(contract);
-			System.out.printf("   minR:   A:%5.4f      B:%5.4f%n", minA, minB);
+			System.out.println();
+			//System.out.printf("   minR:   A:%5.4f      B:%5.4f%n", minA, minB);
 		}
 
 }
